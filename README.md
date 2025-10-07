@@ -222,7 +222,3 @@ Moved to: out\20250918.xlsx
 ```
 
 **Zwróć uwagę:** Worklogi będą dodane z datą `2025-09-18` i godzinę `15:00:00` w strefie czasowej `+0200` (Europe/Warsaw).
-
-## Autor
-
-Skrypt został stworzony dla automatyzacji worklogów w Jira Server v8.13.8.
