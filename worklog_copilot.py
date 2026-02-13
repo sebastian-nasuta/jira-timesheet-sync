@@ -167,7 +167,7 @@ class JiraClient:
             print(f"DEBUG: {' '.join(debug_cmd)}")
         
         try:
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+            result = subprocess.run(cmd, capture_output=True, encoding='utf-8', errors='replace', timeout=timeout)
             
             # Extract HTTP status code from end of response
             stdout = result.stdout
@@ -344,4 +344,5 @@ def main():
     return 0 if success else 1
 
 if __name__ == "__main__":
+
     sys.exit(main())
